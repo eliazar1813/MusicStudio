@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImportActivity">
+
+    <ImageView
+        android:id="@+id/TopBackground"
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/filePicture"
+        android:layout_width="187dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/insertpicture"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TopBackground"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/filepath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Song Path"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SongTitle" />
+
+    <ImageView
+        android:id="@+id/songCover"
+        android:layout_width="96dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/insertpicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filepath" />
+
+    <TextView
+        android:id="@+id/SongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Song Tittle"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBackground" />
+
+    <ImageView
+        android:id="@+id/music_imageView3"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="204dp"
+        android:src="@drawable/musicsign2"
+        app:layout_constraintTop_toTopOf="@+id/TopBackground"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="249dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="192dp"
+        app:layout_constraintStart_toStartOf="@+id/TopBackground"
+        app:layout_constraintTop_toTopOf="@+id/TopBackground"
+        app:srcCompat="@drawable/tonearm" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_music_note_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/SongTitle"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_queue_music_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/filepath"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_attach_file_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/songCover"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="608dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_main" />
+
+    <EditText
+        android:id="@+id/songTittleText"
+        android:layout_width="234dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="92dp"
+        android:gravity="center"
+        android:textColor="?attr/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/filepath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SongTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/searchSongFile"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="?attr/buttonColor"
+        android:gravity="center"
+        android:text="Search"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="searchFileSong"
+        app:layout_constraintBottom_toTopOf="@+id/songCover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filepath"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/songPicture"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
+        android:backgroundTint="?attr/buttonColor"
+        android:gravity="center"
+        android:text="Search"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="searchPictureSong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songCover" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="?attr/buttonColor"
+        android:text="Upload"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/songPicture" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

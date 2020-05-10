@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E9CE9</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0340CA</color>
+
+
+        <color name="colorPrimary1">#FC5188</color>
+        <color name="colorAccent1">#EE195E</color>
+
+        <color name="colorPrimary2">#9C27B0</color>
+        <color name="colorAccent2">#6C2577</color>
+
+        <color name="colorPrimary3">#FFEB3B</color>
+        <color name="colorAccent3">#E7CE06</color>
+
+        <color name="colorPrimary4">#FF0013</color>
+        <color name="colorAccent4">#C20606</color>
+
+        <color name="colorPrimary5">#34E03A</color>
+        <color name="colorAccent5">#4CAF50</color>
+
+
+    <string-array name="colorName">
+        <item>Blue</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Yellow</item>
+        <item>Red</item>
+        <item>Green</item>
+    </string-array>
+
+
+
+</resources>

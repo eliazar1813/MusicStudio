@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_library_music_white_24dp"
+        android:title="@string/title_home"
+        android:onClick="HomeLibrary"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/navigation_Favorite"
+        android:icon= "@drawable/ic_favorite_white_24dp"
+        android:title="@string/title_favorite"
+        android:onClick="Favorite"
+        app:showAsAction="always"
+        android:visible="true"
+
+        />
+
+    <item
+        android:id="@+id/navigation_import"
+        android:icon="@drawable/ic_add_circle_outline_white_24dp"
+        android:title="@string/title_play"
+        android:onClick="Import"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+</menu>

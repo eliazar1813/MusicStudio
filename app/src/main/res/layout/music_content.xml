@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/backGroundColor"
+    android:orientation="horizontal"
+    tools:context=".MusicAdapter">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/songPicture"
+            android:layout_width="135dp"
+            android:layout_height="116dp"
+            android:src="@drawable/profile8"
+            android:translationY="20sp"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/songTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akronim"
+            android:gravity="center"
+            android:text="@string/songtittle"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:translationX="180sp"
+            android:translationY="15sp" />
+
+
+        <ImageView
+            android:id="@+id/PauseButton"
+            android:layout_width="39dp"
+            android:layout_height="34dp"
+            android:width="50dp"
+            android:height="41dp"
+            android:background="@drawable/ic_play__arrow_24dp"
+            android:contentDescription="@string/todo"
+            android:translationX="210sp"
+            android:translationY="95sp" />
+
+        <ImageView
+            android:id="@+id/PlayButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:width="50sp"
+            android:height="41sp"
+            android:background="@drawable/ic_pause_black_24dp"
+            android:translationX="150sp"
+            android:translationY="90sp"
+            android:contentDescription="@string/todo" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:width="50sp"
+            android:height="41sp"
+            android:background="@drawable/ic_stop_black_24dp"
+            android:translationX="280sp"
+            android:translationY="93sp" />
+
+        <TextView
+            android:id="@+id/pauseView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akronim"
+            android:text="@string/play"
+            android:textColor="?attr/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="210sp"
+            android:translationY="70sp" />
+
+        <TextView
+            android:id="@+id/playView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akronim"
+            android:text="@string/pause"
+            android:textColor="?attr/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="150sp"
+            android:translationY="70sp" />
+
+        <TextView
+            android:id="@+id/stopView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akronim"
+            android:text="@string/stop"
+            android:textColor="?attr/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="280sp"
+            android:translationY="70sp" />
+
+        <Button
+            android:id="@+id/fav_Button"
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:background="@drawable/ic_favorite_black_24dp"
+            android:translationX="340sp" />
+
+        <Button
+            android:id="@+id/songOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="@font/akronim"
+            android:text="@string/by_userAccount"
+            android:textColor="?attr/textColor"
+            android:textStyle="bold"
+            android:translationX="260dp"
+            android:translationY="125dp" />
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/ic_share_black_24dp"
+            android:contentDescription="@string/todo"
+            android:translationX="150dp"
+            android:translationY="20dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

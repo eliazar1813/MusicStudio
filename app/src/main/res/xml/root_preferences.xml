@@ -1,0 +1,26 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/favorite_song">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/song_title"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Background Color">
+
+        <ListPreference
+            app:defaultValue="blue"
+            app:entries="@array/colorName"
+            app:entryValues="@array/colorName"
+            app:key="color"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

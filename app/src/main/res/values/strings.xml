@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Music Studio</string>
+    <string name="Email">Email</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">For You</string>
+    <string name="title_play">Import</string>
+    <string name="logout">LogOut</string>
+    <string name="profile">profile</string>
+    <string name="phone">Phone</string>
+    <string name="username">User Name:</string>
+    <string name="songtittle">songTittle</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop!</string>
+
+
+    <array name="RandomPictures">
+
+        <item>@drawable/profile1</item>
+        <item>@drawable/profile2</item>
+        <item>@drawable/profile3</item>
+        <item>@drawable/profile4</item>
+        <item>@drawable/profile5</item>
+        <item>@drawable/profile6</item>
+        <item>@drawable/profile7</item>
+        <item>@drawable/profile8</item>
+        <item>@drawable/profile9</item>
+        <item>@drawable/profile10</item>
+
+    </array>
+
+    <array name="FileImage">
+
+        <item>@drawable/file1</item>
+        <item>@drawable/file2</item>
+        <item>@drawable/file3</item>
+        <item>@drawable/file4</item>
+
+    </array>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="favorite_song">Favorite Song</string>
+
+    <!-- Messages Preferences -->
+    <string name="song_title">Song Title</string>
+    <string name="by_userAccount">By:UserAccount</string>
+    <string name="user_information">User Information</string>
+    <string name="userview">userView</string>
+    <string name="contact_email">Contact Email:</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+
+
+</resources>
+
+
